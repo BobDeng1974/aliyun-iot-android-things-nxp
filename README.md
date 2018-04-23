@@ -122,3 +122,10 @@ mqttClient.publish(pubTopic, message);
 
 ![](https://raw.githubusercontent.com/iot-blog/aliyun-iot-android-things-nxp/master/images/iot-device-status.png)
 
+### 3. 帮助&反馈
+
+<img src='https://raw.githubusercontent.com/iot-blog/yunqi-iot-demo/master/images/iot-dd.png' width="240" height="300" />
+
+联系我：
+
+<img src='https://raw.githubusercontent.com/wongxming/dtalkNodejs/master/wongxming.jpg' width="240" height="240" />
