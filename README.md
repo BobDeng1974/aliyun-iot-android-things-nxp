@@ -12,6 +12,10 @@ DHT12支持I2C，淘宝有售
 #### 甲醛传感器 ZE08-CH2O
 ZE08支持UART，淘宝有售
 
+设备接线
+
+![](https://raw.githubusercontent.com/iot-blog/aliyun-iot-android-things-nxp/master/images/aliyun-iot-androidthings-dht12-ze08.png)
+
 ### 2.阿里云IoT物联网套件
 #### 2.1 开通阿里云IoT物联网套件
 [IoT物联网套件官网地址](https://www.aliyun.com/product/iot)
