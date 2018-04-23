@@ -53,9 +53,9 @@ public class MainActivity extends Activity {
 
     private static final int DELAY_MILLIS = 5 * 1000;
 
-    public static String productKey = "a1uqtK9VHcO";
-    public static String deviceName = "efksZbYkZM89JJigw5pe";
-    public static String deviceSecret = "qdLEX38dwb8fqSjWebFS583lcZkXVrMr";
+    public static String productKey = "替换自己的产品key";
+    public static String deviceName = "替换自己的产品deviceName";
+    public static String deviceSecret = "替换自己的产品secret";
 
     //property post topic
     private static String pubTopic = "/sys/" + productKey + "/" + deviceName + "/thing/event/property/post";
