@@ -77,29 +77,28 @@ private void readDataFromI2C() {
 ```
 
 d) Ze08CH2O通过UART获取ZE08数据
-```
+```java
 try {
-                // data buffer
-                byte[] buffer = new byte[9];
+    // data buffer
+    byte[] buffer = new byte[9];
 
-                while (uartDevice.read(buffer, buffer.length) > 0) {
+    while (uartDevice.read(buffer, buffer.length) > 0) {
 
-                    if (checkSum(buffer)) {
-                        ppbCh2o = buffer[4] * 256 + buffer[5];
-                        ch2o = ppbCh2o / 66.64 * 0.08;
-                    } else {
-                        ch2o = ppbCh2o = 0;
-                    }
-                    Log.d(TAG, "ch2o: " + ch2o);
-                }
-
-            } catch (IOException e) {
-                Log.e(TAG, "Ze08CH2O read data error " + e.getMessage(), e);
-            }
+       if (checkSum(buffer)) {
+          ppbCh2o = buffer[4] * 256 + buffer[5];
+          ch2o = ppbCh2o / 66.64 * 0.08;
+       } else {
+          ch2o = ppbCh2o = 0;
+       }
+       Log.d(TAG, "ch2o: " + ch2o);
+     }
+} catch (IOException e) {
+    Log.e(TAG, "Ze08CH2O read data error " + e.getMessage(), e);
+}
 ```
 
 e) 创建阿里云IoT连接，上报数据
-```
+```java
 
 /*
 payload格式
